@@ -1,0 +1,24 @@
+---
+import '@fontsource/jetbrains-mono';
+import Name from '../components/Name.astro';
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-base-3 dark:bg-base-03 text-base-00 dark:text-base-0 p-12 font-jetbrains">
+		<header>
+			<h1 class="sr-only">Adam Shea</h1>
+			<Name/>
+		</header>
+		<main class="mt-16">
+			<slot/>
+		</main>
+	</body>
+</html>
