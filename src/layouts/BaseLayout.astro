@@ -1,8 +1,46 @@
 ---
-import '@fontsource/jetbrains-mono';
-import Name from '../components/Name.astro';
-const { title } = Astro.props;
+import "@fontsource/jetbrains-mono"
+import Name from "../components/Name.astro"
+const { title } = Astro.props
 ---
+
+<style is:global>
+	@font-face {
+		font-family: "Hack";
+		src:
+			url("fonts/hack-regular.woff2?sha=3114f1256") format("woff2"),
+			url("fonts/hack-regular.woff?sha=3114f1256") format("woff");
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Hack";
+		src:
+			url("fonts/hack-bold.woff2?sha=3114f1256") format("woff2"),
+			url("fonts/hack-bold.woff?sha=3114f1256") format("woff");
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Hack";
+		src:
+			url("fonts/hack-italic.woff2?sha=3114f1256") format("woff2"),
+			url("fonts/hack-italic.woff?sha=3114f1256") format("woff");
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	@font-face {
+		font-family: "Hack";
+		src:
+			url("fonts/hack-bolditalic.woff2?sha=3114f1256") format("woff2"),
+			url("fonts/hack-bolditalic.woff?sha=3114f1256") format("woff");
+		font-weight: 700;
+		font-style: italic;
+	}
+</style>
 
 <html lang="en">
 	<head>
@@ -12,13 +50,13 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-base-3 dark:bg-base-03 text-base-00 dark:text-base-0 p-12 font-jetbrains">
+	<body class="bg-base-3 dark:bg-base-03 text-base-01 dark:text-base-1 p-12 font-mono">
 		<header>
 			<h1 class="sr-only">Adam Shea</h1>
-			<Name/>
+			<Name />
 		</header>
 		<main class="mt-16">
-			<slot/>
+			<slot />
 		</main>
 	</body>
 </html>

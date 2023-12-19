@@ -28,7 +28,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				jetbrains: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono],
+				mono: ["Hack", ...defaultTheme.fontFamily.mono],
 			},
 			keyframes: {
 				blink: {
