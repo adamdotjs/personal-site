@@ -4,13 +4,84 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 
 <BaseLayout title="Home">
 	<div class="flex text-3xl">
-		<h1 class="font-bold relative max-w-max">Hello, world</h1>
-		<div id="cursor" class="animate-blink text-orange">&block;</div>
+		<h1 class="font-bold relative max-w-max text-blue">Hello, world...</h1>
+		<div id="cursor" class="animate-blink text-violet">&block;</div>
 	</div>
-	<p class="mt-2 max-w-prose">
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe consectetur exercitationem ex
-		laudantium quam doloremque repellat? Molestias qui neque a porro molestiae cum, nam consequuntur
-		magni alias architecto rerum, culpa non aspernatur, expedita reprehenderit officiis facilis
-		inventore itaque asperiores! At alias similique a libero, fugit nulla consectetur qui sunt aut?
+	<p class="max-w-prose border-l border-base-01 pl-4">
+		I'm Adam, a full stack software developer based in Massachusetts, USA. I specialize in crafting
+		modern, full featured applications with a focus on user experience and accessibility; because
+		everyone deserves to be able to use the web to its fullest.
 	</p>
+
+	<section class="mt-12">
+		<h2 class="text-xl font-bold text-green">Projects</h2>
+		<ul class="flex flex-col gap-2 max-w-prose border-l border-base-01 pl-4">
+			<li>
+				<h3 class="text-blue font-bold">Imposition calculator</h3>
+				<p class="max-w-prose border-l border-base-01 pl-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</li>
+			<li>
+				<h3 class="text-blue font-bold">Issue Tracker</h3>
+				<p class="max-w-prose border-l border-base-01 pl-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</li>
+			<li>
+				<h3 class="text-blue font-bold">VSCode Theme</h3>
+				<p class="max-w-prose border-l border-base-01 pl-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				</p>
+			</li>
+		</ul>
+
+		<section class="mt-12">
+			<h2 class="text-xl font-bold text-green">Open Source Contributions</h2>
+			<ul class="flex flex-col gap-2 max-w-prose border-l border-base-01 pl-4">
+				<li>
+					<h3 class="text-blue font-bold">Remix</h3>
+					<p class="max-w-prose border-l border-base-01 pl-4">
+						Submitted edits to the Remix documentation
+					</p>
+				</li>
+				<li>
+					<h3 class="text-blue font-bold">Airbnb</h3>
+					<p class="max-w-prose border-l border-base-01 pl-4">
+						Submit bug fixes and PR's for UI related issues
+					</p>
+				</li>
+			</ul>
+		</section>
+
+		<section class="mt-12">
+			<h2 class="text-xl font-bold text-green">Networking</h2>
+			<ul class="flex flex-col gap-2 max-w-prose border-l border-base-01 pl-4">
+				<li>
+					<a href="https://www.twitter.com/adamdotjs" target="_blank" class="text-orange underline"
+						>Twitter</a
+					>
+				</li>
+				<li>
+					<a href="https://www.github.com/adamdotjs" target="_blank" class="text-orange underline"
+						>GitHub</a
+					>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/adamdotjs" target="_blank" class="text-orange underline"
+						>LinkedIn</a
+					>
+				</li>
+			</ul>
+		</section>
+		<section class="mt-12">
+			<h2 class="text-xl font-bold text-green">Contact</h2>
+			<p class="max-w-prose border-l border-base-01 pl-4">
+				If you'd like copy of my resume or just want to chat about working together,
+				<a href="https://www.twitter.com/adamdotjs" target="_blank" class="text-orange underline"
+					>shoot me an email</a
+				>
+			</p>
+		</section>
+	</section>
 </BaseLayout>

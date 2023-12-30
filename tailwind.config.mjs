@@ -8,6 +8,7 @@ export default {
 			transparent: "transparent",
 			current: "currentColor",
 			base: {
+				"03": "#001F2A",
 				"03": "#002b36",
 				"02": "#073642",
 				"01": "#586e75",
@@ -16,6 +17,7 @@ export default {
 				1: "#93a1a1",
 				2: "#eee8d5",
 				3: "#fdf6e3",
+				4: "#FFFFEC",
 			},
 			red: "#dc322f",
 			orange: "#cb4b16",
